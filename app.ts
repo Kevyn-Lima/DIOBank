@@ -4,9 +4,9 @@ import { PeopleAccount } from './class/PeopleAccount'
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
 peopleAccount.deposit(20)
-//console.log(`Your Balance is ${peopleAccount.balance}`)
+console.log(`Your Balance is ${peopleAccount.getBalance()}`)
 peopleAccount.withdraw(15)
-//console.log(`Your withdraw has been completed, and you balance now is ${peopleAccount.balance}`)
+console.log(`Your withdraw has been completed, and you balance now is ${peopleAccount.getBalance()}`)
 
 const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
 companyAccount.deposit(15)
